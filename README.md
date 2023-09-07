@@ -86,6 +86,33 @@ verificar_bisiesto(año)
 
  ejercicio 5 
 
+# Definir una función que recibe 4 notas como parámetros
+def calcular_promedio(nota1, nota2, nota3, nota4):
+  # Sumar las 4 notas y dividir por 4 para obtener el promedio
+  promedio = (nota1 + nota2 + nota3 + nota4) / 4
+  # Redondear el promedio al entero más cercano
+  promedio_redondeado = round(promedio)
+  # Verificar si el promedio redondeado es mayor o igual a 11
+  if promedio_redondeado >= 11:
+    # Si el promedio redondeado es mayor o igual a 11, imprimir "Aprobado"
+    estado = "Aprobado"
+  else:
+    # Si el promedio redondeado es menor que 11, imprimir "Desaprobado"
+    estado = "Desaprobado"
+  # Imprimir el promedio, el promedio redondeado y el estado
+  print(f"El promedio es {promedio}")
+  print(f"El promedio redondeado es {promedio_redondeado}")
+  print(f"El alumno está {estado}")
+
+# Solicitar al usuario que ingrese las 4 notas
+nota1 = float(input("Ingrese la primera nota: "))
+nota2 = float(input("Ingrese la segunda nota: "))
+nota3 = float(input("Ingrese la tercera nota: "))
+nota4 = float(input("Ingrese la cuarta nota: "))
+
+# Llamar a la función con las 4 notas ingresadas
+calcular_promedio(nota1, nota2, nota3, nota4)
+
 
 
 
