@@ -114,6 +114,156 @@ nota4 = float(input("Ingrese la cuarta nota: "))
 calcular_promedio(nota1, nota2, nota3, nota4)
 
 
+ejercicio 6 
+
+# Definir una función que recibe 3 números enteros como parámetros
+def determinar_mayor_menor(a, b, c):
+  # Inicializar el mayor y el menor con el primer número
+  mayor = a
+  menor = a
+  # Comparar el segundo número con el mayor y el menor
+  if b > mayor:
+    # Si el segundo número es mayor que el mayor, actualizar el mayor
+    mayor = b
+  elif b < menor:
+    # Si el segundo número es menor que el menor, actualizar el menor
+    menor = b
+  # Comparar el tercer número con el mayor y el menor
+  if c > mayor:
+    # Si el tercer número es mayor que el mayor, actualizar el mayor
+    mayor = c
+  elif c < menor:
+    # Si el tercer número es menor que el menor, actualizar el menor
+    menor = c
+  # Imprimir en pantalla el mayor y el menor
+  print(f"El número mayor es {mayor}")
+  print(f"El número menor es {menor}")
+
+# Solicitar al usuario que ingrese los 3 números enteros
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+c = int(input("Ingrese el tercer número: "))
+
+# Llamar a la función con los 3 números ingresados
+determinar_mayor_menor(a, b, c)
+
+
+ejercicio 7
+
+# Definir una función que recibe 3 números enteros como parámetros
+def ordenar_numeros(a, b, c):
+  # Crear una lista vacía para almacenar los números ordenados
+  lista_ordenada = []
+  # Encontrar el número menor entre los 3 números
+  menor = min(a, b, c)
+  # Agregar el número menor a la lista ordenada
+  lista_ordenada.append(menor)
+  # Encontrar el número mayor entre los 3 números
+  mayor = max(a, b, c)
+  # Encontrar el número medio entre los 3 números
+  medio = a + b + c - menor - mayor
+  # Agregar el número medio a la lista ordenada
+  lista_ordenada.append(medio)
+  # Agregar el número mayor a la lista ordenada
+  lista_ordenada.append(mayor)
+  # Imprimir en pantalla la lista ordenada
+  print(f"Los números ordenados de menor a mayor son: {lista_ordenada}")
+
+# Solicitar al usuario que ingrese los 3 números enteros
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+c = int(input("Ingrese el tercer número: "))
+
+# Llamar a la función con los 3 números ingresados
+ordenar_numeros(a, b, c)
+
+
+
+ ejercicio 8
+
+# Definir una función que recibe 3 números enteros como parámetros
+def ordenar_numeros(a, b, c):
+  # Crear una lista vacía para almacenar los números ordenados
+  lista_ordenada = []
+  # Encontrar el número mayor entre los 3 números
+  mayor = max(a, b, c)
+  # Agregar el número mayor a la lista ordenada
+  lista_ordenada.append(mayor)
+  # Encontrar el número menor entre los 3 números
+  menor = min(a, b, c)
+  # Encontrar el número medio entre los 3 números
+  medio = a + b + c - menor - mayor
+  # Agregar el número medio a la lista ordenada
+  lista_ordenada.append(medio)
+  # Agregar el número menor a la lista ordenada
+  lista_ordenada.append(menor)
+  # Imprimir en pantalla la lista ordenada
+  print(f"Los números ordenados de mayor a menor son: {lista_ordenada}")
+
+# Solicitar al usuario que ingrese los 3 números enteros
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+c = int(input("Ingrese el tercer número: "))
+
+# Llamar a la función con los 3 números ingresados
+ordenar_numeros(a, b, c)
+
+
+ejercicio 9
+
+# Definir las variables usuario y contraseña con los valores deseados
+usuario = "admin"
+contraseña = "1234"
+
+# Solicitar al usuario que ingrese su usuario y contraseña
+usuario_ingresado = input("Ingrese su usuario: ")
+contraseña_ingresada = input("Ingrese su contraseña: ")
+
+# Comparar el usuario y la contraseña ingresados con las variables
+if usuario_ingresado == usuario and contraseña_ingresada == contraseña:
+  # Si el usuario y la contraseña son correctos, imprimir "Puede ingresar al sistema"
+  print("Puede ingresar al sistema")
+else:
+  # Si el usuario o la contraseña son incorrectos, imprimir "No puede ingresar al sistema"
+  print("No puede ingresar al sistema")
+
+
+ ejercicio 10
+
+# Definir una función que recibe dos números como parámetros
+def verificar_divisibilidad(a, b):
+  # Verificar si el segundo número es cero
+  if b == 0:
+    # Si el segundo número es cero, imprimir "No se puede dividir por cero"
+    print("No se puede dividir por cero")
+  else:
+    # Si el segundo número no es cero, calcular el resto de la división
+    resto = a % b
+    # Comparar el resto con el valor cero
+    if resto == 0:
+      # Si el resto es cero, imprimir "Los números son divisibles"
+      print("Los números son divisibles")
+    else:
+      # Si el resto no es cero, imprimir "Los números no son divisibles"
+      print("Los números no son divisibles")
+
+# Solicitar al usuario que ingrese dos números
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+
+# Llamar a la función con los dos números ingresados
+verificar_divisibilidad(a, b)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
