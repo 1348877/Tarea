@@ -243,6 +243,23 @@ else:
   print("No puede ingresar al sistema")
 
 
+  ejercicio 10
+
+
+# Solicitar al usuario el número de horas trabajadas
+horas = int(input("Ingrese el número de horas trabajadas: "))
+
+# Verificar si el número de horas es menor o igual a 40
+if horas <= 40:
+  # Si el número de horas es menor o igual a 40, calcular el salario como 16 dólares por hora
+  salario = horas * 16
+else:
+  # Si el número de horas es mayor que 40, calcular el salario como 16 dólares por las primeras 40 horas y 20 dólares por cada hora extra
+  salario = (40 * 16) + ((horas - 40) * 20)
+
+# Imprimir el salario semanal con dos decimales
+print(f"El salario semanal es {salario:.2f} dólares")
+
 
 
 
