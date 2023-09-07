@@ -1,3 +1,5 @@
+ejercicio 1
+
 # Definir una función que recibe la edad como parámetro
 def verificar_edad(edad):
   # Comparar la edad con el valor 18
@@ -17,7 +19,7 @@ verificar_edad(edad)
 
 
 
-ejercicio 2
+ ejercicio 2
 
 # Definir una función que recibe dos números como parámetros
 def verificar_divisibilidad(a, b):
@@ -28,7 +30,20 @@ def verificar_divisibilidad(a, b):
   else:
     # Si el segundo número no es cero, calcular el resto de la división
     resto = a % b
-    # Comparar el resto con el valor c
+    # Comparar el resto con el valor cero
+    if resto == 0:
+      # Si el resto es cero, imprimir "Los números son divisibles"
+      print("Los números son divisibles")
+    else:
+      # Si el resto no es cero, imprimir "Los números no son divisibles"
+      print("Los números no son divisibles")
+
+# Solicitar al usuario que ingrese dos números
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+
+# Llamar a la función con los dos números ingresados
+verificar_divisibilidad(a, b)
 
 
 
@@ -228,31 +243,7 @@ else:
   print("No puede ingresar al sistema")
 
 
- ejercicio 10
 
-# Definir una función que recibe dos números como parámetros
-def verificar_divisibilidad(a, b):
-  # Verificar si el segundo número es cero
-  if b == 0:
-    # Si el segundo número es cero, imprimir "No se puede dividir por cero"
-    print("No se puede dividir por cero")
-  else:
-    # Si el segundo número no es cero, calcular el resto de la división
-    resto = a % b
-    # Comparar el resto con el valor cero
-    if resto == 0:
-      # Si el resto es cero, imprimir "Los números son divisibles"
-      print("Los números son divisibles")
-    else:
-      # Si el resto no es cero, imprimir "Los números no son divisibles"
-      print("Los números no son divisibles")
-
-# Solicitar al usuario que ingrese dos números
-a = int(input("Ingrese el primer número: "))
-b = int(input("Ingrese el segundo número: "))
-
-# Llamar a la función con los dos números ingresados
-verificar_divisibilidad(a, b)
 
 
 
